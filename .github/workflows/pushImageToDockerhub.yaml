@@ -27,7 +27,7 @@ jobs:
       run: docker build -t flask-app .
 
     - name: Tag Docker image
-      run: docker tag final-python ${{ secrets.DOCKERHUB_USERNAME }}/flask-app
+      run: docker tag flask-app ${{ secrets.DOCKERHUB_USERNAME }}/flask-app
 
     - name: Push Docker image to DockerHub
       run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/flask-app
