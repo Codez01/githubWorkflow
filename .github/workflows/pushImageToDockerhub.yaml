@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        repository: https://github.com/Codez01/final-python.git
+        repository: Codez01/final-python
         ref: main # checkout the main branch
 
 
